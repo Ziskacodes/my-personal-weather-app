@@ -44,6 +44,35 @@ header{
     padding-bottom: 20px;
 }
 
+.weather-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.city{
+   margin:0%;
+    font-family: "Roboto";
+}
+
+.details{
+  color:rgba(0, 0, 0, 0.7);
+
+}
+main{
+    padding: 20px;
+}
+
+.temperature-container{
+    display: flex;
+}
+
+
+
 footer{border-top:1px solid #bfd8d5; 
-padding-top: 20px;
-font-size: 14px;}
+padding-top:  20px;
+font-size: 14px;
+color: rgba(0, 0, 0, 0.5);
+text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);}
+
+a{color: #bfd8d5;
+font-weight:bold;}
