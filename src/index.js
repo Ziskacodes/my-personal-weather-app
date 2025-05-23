@@ -1,6 +1,6 @@
 
 function handleSearchInput (event){
-    event.preventDefault;
+    event.preventDefault();
     {
         let searchInput=document.querySelector("#form-input-id");
         let cityElement=document.querySelector("#city-id");
@@ -8,4 +8,4 @@ function handleSearchInput (event){
     }
 }
 let searchFormElement= document.querySelector(".formular");
-searchFormElement.addEventListener("sunbmit", handleSearchInput);
+searchFormElement.addEventListener("submit", handleSearchInput);
