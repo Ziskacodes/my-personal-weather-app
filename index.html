@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+    <title>My-personal-weather-app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
+   <div class="weather-app">
     <header>
-        <form action="search" >
-    <input type = "text" placeholder= "Enter a city" required>
-<input type= "submit" value= "Search"/>
+        <form action="search" class="formular">
+    <input type = "text" placeholder= "Enter a city" required class="form-input">
+<input type= "submit" value= "Search" class="form-button"/>
 </form>
         
     </header>
@@ -25,5 +32,6 @@
         <div>🌤️ 12°C</div>
         </main>
     <footer>coded by <a href="https://github.com/Ziskacodes">Franziska Meyer</a>, open-sourced on <a href="https://github.com/Ziskacodes/my-personal-weather-app">Github</a> and hosted on <a href="https://app.netlify.com/projects/my-personal-weather-app-shecodes/overview">Netflify</a></footer>
+</div>
 </body>
 </html>
