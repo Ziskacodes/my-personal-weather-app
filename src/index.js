@@ -4,8 +4,10 @@ function refreshData (response) {
     let temperatureElement = document.querySelector("#temperature");
     let clearTemperature = response.data.temperature.current;
     let cityElement = document.querySelector("#city-id");
+    let descriptionElement = document.querySelector("#description");
     cityElement.innerHTML = response.data.city;
-     temperatureElement.innerHTML = Math.round(clearTemperature);
+    descriptionElement.innerHTML = response.data.condition.description;
+    temperatureElement.innerHTML = Math.round(clearTemperature);
 
 }
 
