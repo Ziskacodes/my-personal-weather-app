@@ -1,15 +1,16 @@
 body{
     background-color: #b1bed5;
-    background-image: url("https: //images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("red-clouds.jpg");
+    background-size: cover;
 }
 
 .weather-app{
     
-    background-color: #f4f3f3;
+    background-color: #F7DBD7;
     margin: 60px auto;
     padding: 30px;
     max-width: 700px;
-    font-family: "Roboto";
+    font-family: "Sour Gummy";
     border-radius: 14px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -17,7 +18,7 @@ body{
 .form-input{
     border: none;
     max-width: 80%;
-    background-color: #b1bed5;
+    background-color: #C6BBCB;
     width: 50%;
     padding: 10px 20px;
     text-align: left;
@@ -32,7 +33,7 @@ body{
 }
 
 .form-button{
-    background-color: #93e4c1;
+    background-color: #9A4F53;
     padding: 10px 20px;
     height: fit-content;
     font-size: 18px;
@@ -43,7 +44,7 @@ body{
 }
 
 header{
-    border-bottom: 1px solid #93e4c1;
+    border-bottom: 1px solid #9A4F53;
     padding-bottom: 20px;
 }
 
@@ -83,11 +84,11 @@ main{
     margin-top: 15px;
 }
 
-footer{border-top:1px solid #93e4c1; 
+footer{border-top:1px solid #9A4F53; 
 padding-top:  20px;
 font-size: 14px;
 color: rgba(0, 0, 0, 0.5);
 text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);}
 
-a{color: #93e4c1;
+a{color: #9A4F53;
 font-weight:bold;}
