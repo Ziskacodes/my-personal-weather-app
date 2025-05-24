@@ -5,6 +5,10 @@ function refreshData (response) {
     let clearTemperature = response.data.temperature.current;
     let cityElement = document.querySelector("#city-id");
     let descriptionElement = document.querySelector("#description");
+    let humidityElement = document.querySelector("#humidity");
+    let windElement = document.querySelector("#wind");
+    windElement.innerHTML = `${response.data.wind.speed}km/h`;
+    humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
     cityElement.innerHTML = response.data.city;
     descriptionElement.innerHTML = response.data.condition.description;
     temperatureElement.innerHTML = Math.round(clearTemperature);
