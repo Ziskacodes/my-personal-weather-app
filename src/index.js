@@ -7,13 +7,39 @@ function refreshData (response) {
     let descriptionElement = document.querySelector("#description");
     let humidityElement = document.querySelector("#humidity");
     let windElement = document.querySelector("#wind");
+
+    let date = new Date (response.data.time * 1000);
+
+    
+   
+    
     windElement.innerHTML = `${response.data.wind.speed}km/h`;
     humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
     cityElement.innerHTML = response.data.city;
     descriptionElement.innerHTML = response.data.condition.description;
     temperatureElement.innerHTML = Math.round(clearTemperature);
+    let timeElement = document.querySelector("#time");
+    timeElement.innerHTML= createDate (date);
 
 }
+
+function createDate (date) {
+    
+    
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+
+    let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+    ]
+
+    let day = days[date.getDay()];
+
+    if (minutes < 0){minutes = `0${minutes}`};
+
+    return`${day} ${hours}:${minutes},`;
+    
+}
+
 
 function searchCity(city) {
 
