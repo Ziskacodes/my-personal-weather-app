@@ -92,3 +92,22 @@ text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);}
 
 a{color: #9A4F53;
 font-weight:bold;}
+
+.forecast-day{
+    text-align: center;
+}
+
+.forecast-icon{
+    text-align: center;
+    margin: 10px;
+}
+
+.forecast-temperatures{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px; 
+}
+.forecast-temperature{
+    padding: 0 15px;
+}
