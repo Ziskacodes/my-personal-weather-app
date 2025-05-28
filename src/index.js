@@ -60,9 +60,22 @@ function handleSearchInput (event){
 let searchFormElement= document.querySelector(".formular");
 searchFormElement.addEventListener("submit", handleSearchInput);
 
-searchCity("Hamburg");
+function getForecast (city) {
+    let apiKey = "o264bt8e7db718ffba5d20417c0b8fa3";
+    let apiUrlforecast = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`
+axios.get(apiUrlforecast).then(displayForecast);
+}
+
+
+
+
+
+
 
 function displayForecast(){
+
+
+
 let days = [`Tue`, `Wed`, `Thur`, `Fri`, `Sat`];
 let forecastHTML = " ";
 
@@ -82,3 +95,5 @@ let forecastElement = document.querySelector("#forecast");
 forecastElement.innerHTML = forecastHTML;
 }
 displayForecast();
+searchCity("Hamburg");
+getForecast("Hamburg")
