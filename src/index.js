@@ -61,3 +61,24 @@ let searchFormElement= document.querySelector(".formular");
 searchFormElement.addEventListener("submit", handleSearchInput);
 
 searchCity("Hamburg");
+
+function displayForecast(){
+let days = [`Tue`, `Wed`, `Thur`, `Fri`, `Sat`];
+let forecastHTML = " ";
+
+days.forEach(function (day) {
+    forecastHTML = forecastHTML + 
+    `    <div class="weather-forecast-day">
+        <div class="forecast-day">${day}</div>
+        <div class="forecast-icon">🌤</div>
+        <div class="forecast-temperatures">
+            <div class="forecast-temperature">19°</div>
+            <div class="forecast-temperature">12°</div>
+        </div>
+    </div>`
+;
+});
+let forecastElement = document.querySelector("#forecast");
+forecastElement.innerHTML = forecastHTML;
+}
+displayForecast();
