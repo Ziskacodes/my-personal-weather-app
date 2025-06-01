@@ -54,6 +54,7 @@ header{
     justify-content: space-between;
 }
 
+
 .city{
    margin:0%;
     font-family: "Roboto";
@@ -104,8 +105,9 @@ font-weight:bold;}
 }
 
 .forecast-icon{
-    text-align: center;
-    margin: 10px;
+    display: block;
+    margin: 10px auto;
+    width: 60%;
 }
 
 .forecast-temperatures{
@@ -113,6 +115,7 @@ font-weight:bold;}
     display: flex;
     justify-content: center;
     margin: 10px; 
+    width: bold;
 }
 .forecast-temperature{
     padding: 0 15px;
