@@ -1,6 +1,7 @@
 body{
     background-color: #b1bed5;
     background-image: url("red-clouds.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
